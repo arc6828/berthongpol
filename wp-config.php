@@ -88,3 +88,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('FS_METHOD','direct'); 
+@ini_set( 'upload_max_size' , '20M' ); 
+@ini_set( 'post_max_size', '13M');
+@ini_set( 'memory_limit', '15M' );
