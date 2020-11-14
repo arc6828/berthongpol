@@ -158,16 +158,18 @@ $you_missed_enable = esc_attr(get_theme_mod('you_missed_enable','true'));
                         <div class="row">
                             <div class="col-md-6 text-xs">
                                 <p>
-                                <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'newsup' ) ); ?>">
+                                <a href="<?php echo esc_url( __( 'https://www.berthongpol.com', 'newsup' ) ); ?>">
 								<?php
 								/* translators: placeholder replaced with string */
-								printf( esc_html__( 'Proudly powered by %s', 'newsup' ), 'WordPress' );
+								//printf( esc_html__( 'Proudly powered by %s', 'newsup' ), 'WordPress' );
+								printf( esc_html__( 'Copyright 2020 © %s', 'newsup' ), 'เบอร์ทองพล' );
 								?>
 								</a>
-								<span class="sep"> | </span>
+								<span class="sep d-none"> | </span>
 								<?php
 								/* translators: placeholder replaced with string */
-								printf( esc_html__( 'Theme: %1$s by %2$s.', 'newsup' ), 'Newsup', '<a href="' . esc_url( __( 'https://themeansar.com/', 'newsup' ) ) . '" rel="designer">Themeansar</a>' );
+								//printf( esc_html__( 'Theme: %1$s by %2$s.', 'newsup' ), 'Newsup', '<a href="' . esc_url( __( 'https://themeansar.com/', 'newsup' ) ) . '" rel="designer">Themeansar</a>' );
+								//printf( esc_html__( 'Theme: %1$s by %2$s.', 'newsup' ), 'Newsup', '<a href="' . esc_url( __( 'https://themeansar.com/', 'newsup' ) ) . '" rel="designer">Themeansar</a>' );
 								?>
 								</p>
                             </div>
@@ -198,5 +200,29 @@ $you_missed_enable = esc_attr(get_theme_mod('you_missed_enable','true'));
     <!--/Scroll To Top-->
 <!-- /Scroll To Top -->
 <?php wp_footer(); ?>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="109809723819680">
+      </div>
 </body>
 </html>

@@ -101,7 +101,7 @@
 </header>
 <div class="clearfix"></div>
 <?php  if (is_front_page() || is_home()) { ?>
-<div class="p-5" style="background-image: url('http://demo.berthongpol.com/wp-content/uploads/2020/11/aVPexJ.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+<div class="p-5" style="background-image: url('https://www.berthongpol.com/wp-content/uploads/2020/11/aVPexJ.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
 	<h4 class="mb-4 text-white">ทำนายเบอร์</h4>
 
                        <form method="GET" action="https://explore.berthongpol.com/forecast" accept-charset="UTF-8" class="text-white" role="search">
@@ -228,7 +228,7 @@
                             </div>
                             <div class="row ">
                                 <div class="form-group col-lg">
-                                    <button class="btn btn-danger" type="submit">ทำนายเบอร์</button>
+                                    <button class="btn btn-danger"  type="submit">ทำนายเบอร์</button>
                                 </div>
                             </div>                        
                         </form>	
