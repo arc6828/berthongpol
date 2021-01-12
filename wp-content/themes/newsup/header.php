@@ -101,139 +101,6 @@
 </header>
 <div class="clearfix"></div>
 <?php  if (is_front_page() || is_home()) { ?>
-<div class="p-5" style="background-image: url('https://www.berthongpol.com/wp-content/uploads/2020/11/aVPexJ.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
-	<h4 class="mb-4 text-white">ทำนายเบอร์</h4>
-
-                       <form method="GET" action="https://explore.berthongpol.com/forecast" accept-charset="UTF-8" class="text-white" role="search">
-                            <div class="row ">
-                                <div class="form-group col-lg-6">
-                                    <label for="" class="text-white">กรุณาระบุเบอร์ที่ต้องการทำนาย (ตัวเลข 10 หลัก) <span class="text-danger">*</span></label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="tel" placeholder="" value="0987654321" autocomplete="off" pattern="[0-9]{10}" required="">
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-4 d-none">
-                                    <label for="">วันที่เกิด (เดือน/วันที่/ปี)</label>
-                                    <div class="input-group">
-                                        <input type="date" class="form-control" name="date" placeholder="" value="<?php echo date('Y-m-d'); ?>" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-2 d-none">
-                                    <label for="hour">เวลาเกิด (ชั่วโมง)</label>
-                                    <div class="input-group">
-                                    <select id="hour" name="hour" class="form-control">
-                                        <option value="">ไม่ระบุ</option>
-                                        <option value="00">00</option>
-                                        <option value="01">01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                        <option value="07">07</option>
-                                        <option value="08">08</option>
-                                        <option value="09">09</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                        <option value="23">23</option>
-                                    </select>
-                                    <script>
-                                        document.querySelector("#hour").value = "";
-                                    </script>
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-2 d-none">
-                                    <label for="minute">เวลาเกิด (นาที)</label>
-                                    <div class="input-group">
-                                    <select id="minute" name="minute" class="form-control">
-                                        <option value="">ไม่ระบุ</option>
-                                        <option value="00">00</option>
-                                        <option value="01">01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                        <option value="07">07</option>
-                                        <option value="08">08</option>
-                                        <option value="09">09</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                        <option value="23">23</option>
-                                        <option value="24">24</option>
-                                        <option value="25">25</option>
-                                        <option value="26">26</option>
-                                        <option value="27">27</option>
-                                        <option value="28">28</option>
-                                        <option value="29">29</option>
-                                        <option value="30">30</option>
-                                        <option value="31">31</option>
-                                        <option value="32">32</option>
-                                        <option value="33">33</option>
-                                        <option value="34">34</option>
-                                        <option value="35">35</option>
-                                        <option value="36">36</option>
-                                        <option value="37">37</option>
-                                        <option value="38">38</option>
-                                        <option value="39">39</option>
-                                        <option value="40">40</option>
-                                        <option value="41">41</option>
-                                        <option value="42">42</option>
-                                        <option value="43">43</option>
-                                        <option value="44">44</option>
-                                        <option value="45">45</option>
-                                        <option value="46">46</option>
-                                        <option value="47">47</option>
-                                        <option value="48">48</option>
-                                        <option value="49">49</option>
-                                        <option value="50">50</option>
-                                        <option value="51">51</option>
-                                        <option value="52">52</option>
-                                        <option value="53">53</option>
-                                        <option value="54">54</option>
-                                        <option value="55">55</option>
-                                        <option value="56">56</option>
-                                        <option value="57">57</option>
-                                        <option value="58">58</option>
-                                        <option value="59">59</option>
-                                    </select>
-                                    <script>
-                                        document.querySelector("#minute").value = "";
-                                    </script>
-                                    </div>
-                                </div>
-								
-                            </div>
-                            <div class="row ">
-                                <div class="form-group col-lg">
-                                    <button class="btn btn-danger"  type="submit">ทำนายเบอร์</button>
-                                </div>
-                            </div>                        
-                        </form>	
-		
-		</div>
 <section class="mg-tpt-tag-area">
   <div class="container-fluid">
  <?php $show_popular_tags_title = newsup_get_option('show_popular_tags_title');
@@ -242,7 +109,10 @@
  newsup_list_popular_taxonomies($select_popular_tags_mode, $show_popular_tags_title, $number_of_popular_tags); ?>
 </div>
 </section>
- <?php }?>
+
+		<?php }?>
  <?php do_action('newsup_action_banner_exclusive_posts'); 
- do_action('newsup_action_front_page_main_section_1'); ?>
+?>
+		<?php
+		do_action('newsup_action_front_page_main_section_1'); ?>
 		
